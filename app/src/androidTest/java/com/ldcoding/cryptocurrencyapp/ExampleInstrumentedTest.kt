@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.ldcoding.cryptocurrencyapp", appContext.packageName)
+        assertEquals("com.plcoding.cryptocurrencyappyt", appContext.packageName)
     }
 }
