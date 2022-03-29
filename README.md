@@ -42,6 +42,10 @@ fun CoinListScreen(
 }
 ```
 
+### Status: 🚧 In progress
+
+Crypto Info is still in under development, and some features are not yet implemented.
+
 
 [splash]: app/src/main/java/com/ldcoding/cryptocurrencyapp/presentation/SplashScreen.kt
 [coins_list]: app/src/main/java/com/ldcoding/cryptocurrencyapp/presentation/coin_list/CoinListScreen.kt
