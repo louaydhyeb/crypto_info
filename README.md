@@ -3,7 +3,7 @@
 Crypto Info is a cryptocurrency app that shows informations about currency
 Application built with [Jetpack Compose](https://developer.android.com/jetpack/compose).
 The goal of this application is to showcase Material components, Android Views
-inside Compose, and UI state handling, [MVVM clean arcitecture](https://www.toptal.com/android/android-apps-mvvm-with-clean-architecture).
+inside Compose, and UI state handling, [MVVM clean architecture](https://www.toptal.com/android/android-apps-mvvm-with-clean-architecture).
 
 ## Screenshots
 
