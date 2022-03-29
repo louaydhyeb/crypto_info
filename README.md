@@ -1,6 +1,6 @@
-# crypto_info
+# Crypto Info
 
-CryptoInfo is a cryptocurrency app that shows informations about currency
+Crypto Info is a cryptocurrency app that shows informations about currency
 Application built with [Jetpack Compose](https://developer.android.com/jetpack/compose).
 The goal of this application is to showcase Material components, Android Views
 inside Compose, and UI state handling, [MVVM clean arcitecture](https://www.toptal.com/android/android-apps-mvvm-with-clean-architecture).
@@ -23,7 +23,7 @@ Jetpack Compose.
 
 ## Hilt
 
-Crypto Indo uses Hilt to manage its dependencies. Hilt's ViewModel (with the
+Crypto Info uses Hilt to manage its dependencies. Hilt's ViewModel (with the
 `@HiltViewModel` annotation) works perfectly with Compose's ViewModel integration (`viewModel()`
 composable function) as you can see in the following snippet of code. `viewModel()` will
 automatically use the factory that Hilt creates for the ViewModel:
