@@ -14,7 +14,7 @@ inside Compose, and UI state handling, [MVVM clean architecture](https://www.top
 This application contains 3 screens:
 - __Splash__ [screen][splash] that fades out after 4 seconds then fade the main content in .
 - __CoinsList__ [screen][coins_list] where you can explore coins list, the rank of the currency, symbol, if the currency is active or not.
- - Clicking on item will lead you to the coin detail screen.
+     Clicking on item will lead you to the coin detail screen.
 - __CoinDetail__ [screen][coin_detail] cointain the details of a specific coin with a description, some tags and the creators 
 
 Crypto Info is a multi-activity app that showcases how navigating between activities can be done in
