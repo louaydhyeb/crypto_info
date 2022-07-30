@@ -14,10 +14,7 @@ jobs:
       - name: Set UP JDK
         uses: actions/setup-java@v1
         with:
-          java-version: 11
-
-      - name: Run Tests
-        run: ./gradlew test
+          java-version: 1.8
 
       - name: Build App
         run: ./gradlew assemble
