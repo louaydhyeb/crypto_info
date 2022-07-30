@@ -1,0 +1,49 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AndroidLintRtlHardcoded" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FieldCanBeLocal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="EXCLUDE_ANNOS">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          </list>
+        </value>
+      </option>
+      <option name="IGNORE_FIELDS_USED_IN_MULTIPLE_METHODS" value="true" />
+    </inspection_tool>
+    <inspection_tool class="SSBasedInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <replaceConfiguration name="please use the support lib getColor" text="$blah$.getColor($color$)" recursive="false" caseInsensitive="false" type="JAVA" reformatAccordingToStyle="true" shortenFQN="false" replacement="ContextCompat.getColor(context, $color$)">
+        <constraint name="color" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+        <constraint name="blah" within="" contains="" />
+      </replaceConfiguration>
+      <searchConfiguration name="never import javax nullable" text="javax.annotation.Nullable" recursive="false" caseInsensitive="true" type="JAVA">
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="never import javax nonnull" text="javax.annotation.Nonnull" recursive="false" caseInsensitive="false" type="JAVA">
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+      <replaceConfiguration name="don't use ArgbEvaluator" text="new ArgbEvaluator()" recursive="false" caseInsensitive="true" type="JAVA" reformatAccordingToStyle="true" shortenFQN="true" replacement="com.deezer.android.ui.animation.GammaEvaluator.getInstance()" />
+      <replaceConfiguration name="don't use ArgbEvaluator, even with ofArgb" text="ValueAnimator.ofArgb($values$, $values2$)" recursive="false" caseInsensitive="true" type="JAVA" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="GammaEvaluator.ValueAnimatorofArgb($values$, $values2$)">
+        <constraint name="values" within="" contains="" />
+        <constraint name="values2" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="don't use NotificationCompat" text="new NotificationCompat.Builder($values$)" recursive="false" caseInsensitive="true" type="JAVA" reformatAccordingToStyle="true" shortenFQN="true" replacement="new PushNotifBuilder($values$)">
+        <constraint name="values" within="" contains="" />
+      </replaceConfiguration>
+    </inspection_tool>
+    <inspection_tool class="unused" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="LOCAL_VARIABLE" value="true" />
+      <option name="FIELD" value="true" />
+      <option name="METHOD" value="true" />
+      <option name="CLASS" value="true" />
+      <option name="PARAMETER" value="true" />
+      <option name="REPORT_PARAMETER_FOR_PUBLIC_METHODS" value="true" />
+      <option name="ADD_MAINS_TO_ENTRIES" value="true" />
+      <option name="ADD_APPLET_TO_ENTRIES" value="true" />
+      <option name="ADD_SERVLET_TO_ENTRIES" value="true" />
+      <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
