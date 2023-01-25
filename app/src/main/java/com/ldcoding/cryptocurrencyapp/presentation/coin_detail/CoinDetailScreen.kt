@@ -58,7 +58,11 @@ fun CoinDetailScreen(
                         crossAxisSpacing = 10.dp,
                         modifier = Modifier.fillMaxWidth()
                     ) {
-                        coin.tags.forEach { tag -> CoinTag(tag = tag) }
+                        coin.tags?.forEach { tag ->
+                            if (tag != null) {
+                                CoinTag(tag = tag)
+                            }
+                        }
                     }
                     Spacer(modifier = Modifier.height(15.dp))
                     Text(text = "Team members", style = MaterialTheme.typography.h3)

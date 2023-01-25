@@ -37,7 +37,8 @@ fun SplashScreen(navController: NavController) {
                 durationMillis = 800,
                 easing = {
                     OvershootInterpolator(4f).getInterpolation(it)
-                })
+                }
+            )
         )
         delay(4000L)
         navController.navigate(Screen.CoinListScreen.route)
@@ -55,7 +56,9 @@ fun SplashScreen(navController: NavController) {
             modifier = Modifier.scale(scale.value)
         )
         Text(
-            text = "CryptoInfo", fontSize = 30.sp, style = TextStyle(
+            text = "CryptoInfo",
+            fontSize = 30.sp,
+            style = TextStyle(
                 shadow = Shadow(
                     color = Color.White,
                     offset = Offset(5f, 5f),

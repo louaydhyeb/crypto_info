@@ -31,7 +31,8 @@ fun CoinListScreen(
             items(state.coins) { item: Coin ->
                 CoinListItem(
                     coin = item,
-                    onItemClick = { navController.navigate(Screen.CoinDetailScreen.route + "/${item.id}") })
+                    onItemClick = { navController.navigate(Screen.CoinDetailScreen.route + "/${item.id}") }
+                )
             }
         }
         if (state.error.isNotBlank()) {
