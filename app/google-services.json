@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "383327726771",
+    "project_id": "cryptocurrencyapp-80fd9",
+    "storage_bucket": "cryptocurrencyapp-80fd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383327726771:android:a04e6b702ab287566d14c6",
+        "android_client_info": {
+          "package_name": "com.ldcoding.cryptocurrencyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383327726771-nhora57i8eg9miocbsajnqdkd13nus1a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLhGaDseuzILN70NmZR7WWi8u9o6RrD68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383327726771-nhora57i8eg9miocbsajnqdkd13nus1a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
