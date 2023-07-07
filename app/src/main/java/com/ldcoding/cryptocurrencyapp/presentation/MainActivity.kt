@@ -1,5 +1,6 @@
 package com.ldcoding.cryptocurrencyapp.presentation
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -10,7 +11,7 @@ import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.BadgeBox
+import androidx.compose.material.BadgedBox
 import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationItem
 import androidx.compose.material.ExperimentalMaterialApi
@@ -47,6 +48,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
+    @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -156,8 +158,8 @@ fun BottomNavigationBar(
                         icon = {
                             Column(horizontalAlignment = CenterHorizontally) {
                                 if (item.badgeCount > 0) {
-                                    BadgeBox(
-                                        badgeContent = {
+                                    BadgedBox(
+                                        badge = {
                                             Text(text = item.badgeCount.toString())
                                         }
                                     ) {
@@ -186,16 +188,6 @@ fun BottomNavigationBar(
             }
         }
     )
-}
-
-@Composable
-fun HomeScreen() {
-    Box(
-        modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(text = "Home screen")
-    }
 }
 
 @Composable
